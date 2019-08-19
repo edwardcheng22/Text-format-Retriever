@@ -1,0 +1,31 @@
+import os 
+
+# Open a file
+
+
+files = os.listdir(".")
+
+newList = []
+for names in files:
+    if names.endswith("txt"):
+        newList.append(names)
+print(newList)
+
+# Get the time of last
+# modification of the specifie
+# path since the epoch
+
+modification_time = os.path.getmtime(fPath)
+print("Last modification time since the epoch:", access_time)
+
+# convert the time in
+# seconds since epoch
+# to local time
+local_time = time.ctime(modification_time)
+print("Last modification time(Local time):", local_time)
+
+fPath = 'Users\\edwar\\OneDrive\\Desktop\\Projects\\Python Demos\\'
+
+
+abPath = os.path.join(fPath, newList)
+print(abPath)
